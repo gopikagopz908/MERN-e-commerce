@@ -1,0 +1,19 @@
+.card-brd{
+    height:20vh !important;
+    width:225px;
+}
+.dashboard-container {
+    height: 100vh; 
+    overflow-y: auto; 
+    padding: 1rem; 
+    background-color: #cde0f3; 
+  }
+  .brd-head{
+    text-align: center;
+    font-Weight: "bold"; 
+    color: "blue"; 
+    font-Size: "35px"; 
+    font-Family: "Arial, sans-serif"
+
+    
+  }

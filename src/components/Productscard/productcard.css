@@ -1,0 +1,68 @@
+
+.mycard {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 280px !important;
+}
+
+.card:hover {
+  transform: scale(1.05)!important; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  background-color: rgb(232, 231, 231)!important;
+  object-fit: cover;
+}
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #02020b;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.text-primary {
+  color: #032344 !important; 
+  font-weight: bold;
+}
+
+
+.btn-primary {
+  background-color: #3d6492;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #164a92 !important; 
+}
+
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 150px; 
+  }
+}
+.wishlist:active,.wishlist:focus{
+
+  color:red;
+  
+
+}
+.wishlist{
+  color:grey;
+}
