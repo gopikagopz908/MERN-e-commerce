@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "./productcard.css";
 import { userContext } from "../../context/useContext";
 import { FaHeart } from "react-icons/fa";
 
