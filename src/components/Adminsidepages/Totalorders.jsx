@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
 import { AdminContext } from '../Admin/AdminContext/Admincontext';
 import "./Totalorders.css";
 
@@ -14,11 +14,11 @@ const OrdersList = () => {
     fontSize:"25px",
     fontWeight:"bold"
   }}  className='pt-2'>Total Orders</h1>
-    <div className="container bg-secondary">
+    <div className="container bg-primary">
 
       {total.map((order) => (
-        <div style={{ maxWidth: "none" }} className="card bg-dark-subtle order-card no-hover w-100 mb-4 mt-2 shadow-lg" key={order.id}>
-          <div className="card-header bg-secondary d-flex justify-content-between align-items-center">
+        <div style={{ maxWidth: "none" }} className="card bg-white-subtle order-card no-hover w-100 mb-4 mt-2 shadow-lg" key={order.id}>
+          <div className="card-header bg-white d-flex justify-content-between align-items-center">
             <span><strong>Order ID:</strong> {order._id}</span>
             <span className="badge bg-primary">{order?.paymentMethod}</span>
           </div>

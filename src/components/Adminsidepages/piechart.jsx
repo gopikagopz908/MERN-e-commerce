@@ -9,7 +9,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const ProductCategoryChart = () => {
   const{products}=useContext(AdminContext)
   
-  const categoryCounts = products.reduce((acc, product) => {
+  const categoryCounts = products?.reduce((acc, product) => {
     acc[product.category] = (acc[product.category] || 0) + 1;
     return acc;
   }, {});

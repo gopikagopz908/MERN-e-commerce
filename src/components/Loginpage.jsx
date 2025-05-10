@@ -30,6 +30,7 @@ const Loginform = () => {
     try {
       console.log(values)
       const response = await axiosInstance.post('/user/login', values);
+      // console.log(response,"loginnnnnnnn")
      
       const userRole = response.data.user.role ;
       setRole(response.data.user.role)

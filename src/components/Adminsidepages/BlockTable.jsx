@@ -16,7 +16,7 @@ const filtered=users.filter((item)=>item.role!=="admin")
     fontFamily: "'Garamond', serif",
     fontSize:"25px",
     fontWeight:"bold"}}>Users</h3>
-    <div style={{ padding: "10px" ,backgroundColor:"lightgrey"}}>
+    <div style={{ padding: "15px" ,backgroundColor:"white"}}>
       <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
         <thead>
           <tr>

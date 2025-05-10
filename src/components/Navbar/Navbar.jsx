@@ -30,7 +30,7 @@ const removeCookie = (name) => {
   return (
     <nav className="navbar navbar-expand-md bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand fs-1 fw-bold" href="#" >ShoeZone</a>
+        <a className="navbar-brand fs-1 fw-bold  "href="#" >ShoeZone</a>
         <button 
           className="navbar-toggler" 
           type="button" 

@@ -34,9 +34,11 @@ if(id){
 
 const fetchCart=()=>{
   axiosInstance.get('/cart/getCart')
+  
   .then((res)=>{
     
-    setCart(res.data.cart.products)
+    const products = res?.data?.cart?.products || [];
+    setCart(products);
 
   })
   .catch((error)=>{
@@ -49,16 +51,28 @@ const fetchCart=()=>{
 useEffect(()=>{                                        
 fetchCart()
 },[])
-  useEffect(()=>{
-    axiosInstance.get(`/order/showorder`)
 
-    .then((res=>{
-        setOrders(res.data.orders)
-    }))
-    .catch((error)=>{
-        console.log(error)
-    })
-  },[])
+  // useEffect(()=>{
+  //   axiosInstance.get(`/order/showorder`)
+
+  //   .then((res=>{
+  //     const orders=res?.data?.orders||[]
+  //       setOrders(orders)
+  //   }))
+  //   .catch((error)=>{
+  //       console.log(error)
+  //   })
+  // },[])
+  useEffect(() => {
+    axiosInstance.get(`/order/showorder`)
+      .then((res) => {
+        const orders = res?.data?.orders || [];
+        setOrders(orders);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   
 
   const loadRazorpayScript = (src) => {

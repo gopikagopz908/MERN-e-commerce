@@ -29,7 +29,7 @@ function Dashboard() {
                 Users
               </h5>
               <p style={{ fontSize: "24px", color: "#fff", fontWeight: "bold" }}>
-                <CountUp end={users.length} duration={2.5}/>+</p>
+                <CountUp end={users?.length} duration={2.5}/>+</p>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ function Dashboard() {
                 Products
               </h5>
               <p style={{ fontSize: "24px", color: "blue", fontWeight: "bold" }}>
-                <CountUp end={products.length} duration={2.5}/>+</p>
+                <CountUp end={products?.length} duration={2.5}/>+</p>
             </div>
           </div>
 
